@@ -14,10 +14,14 @@ h1 {
   padding-top: 30px;
 }
 
+#subtitle {
+  font-size:large;
+}
+
 h2 {
   font-family: 'Courier New', Courier, monospace;
   color:#64413f;
-  font-size:large;
+  font-size:x-large;
   padding-top: 30px;
 }
 
@@ -36,7 +40,7 @@ p {
   font-family: 'Roboto Mono', monospace;
   font-size: medium;
   line-height: 1.5em;
-  padding: 20px 20px;
+  /* padding: 20px 20px; */
 }
 
 ul {
@@ -70,22 +74,35 @@ a {
   padding-top: 0;
 }
 
+
+.list-inline {
+  padding-left: 0px;
+  list-style: none;
+}
+
 .list-inline > li {
   display: inline-block;
-  list-style: none;
-  padding: 0px;
+}
+
+.photo-expo {
+  box-shadow: 2px 3px 10px rgba(143, 136, 143, 0.8);
+}
+
+.YT-embed {
+  box-shadow: 2px 3px 10px rgba(143, 136, 143, 0.8);
 }
 
 @media (max-width: 960px) {
   .photo-expo {
     width: 500px;
+    margin-bottom: 20px;
   }
 }
 
 @media (max-width: 720px) {
   .photo-expo {
     width: 300px;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
   }
   .YT-embed {
     width: 280px;
@@ -96,6 +113,10 @@ a {
 @media (max-width: 540px) {
   .photo-expo {
     width: 200px;
-    padding-bottom: 10px;
+    margin-bottom: 10px;
+  }
+  .YT-embed {
+    width: 200px;
+    height: 112px;
   }
 }
